@@ -1,0 +1,169 @@
+@media (max-width: 600px) {
+    .ham-menu {
+        height: 50px;
+        width: 40px;
+        margin-left: auto;
+        position: relative;
+    }
+
+    .ham-menu span {
+        height: 5px;
+        width: 100%;
+        background-color: var(--main-primary);
+        border-radius: 25px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+    }
+
+    .ham-menu span:nth-child(1) {
+        top: 25%;
+    }
+
+    .ham-menu span:nth-child(3) {
+        top: 75%;
+    }
+
+    .ham-menu.active span {
+        background-color: var(--main-primary);
+    }
+    .ham-menu.active span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .ham-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .ham-menu.active span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .main-header .container {
+        padding: unset;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .ham-menu {
+        margin-right: 20px;
+        z-index: 100;
+    }
+
+    .main-nav li {
+        margin: unset;
+    }
+
+    .main-nav ul {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .main-nav .btn {
+        margin: unset;
+    }
+
+    .main-nav {
+        transform: translateY(-110%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+        background-color: var(--main---white);
+        transition: .3s ease;
+        top: 0;
+        position: absolute;
+        overflow-y: hidden;
+        min-height: 100svh;
+    }
+
+    .main-nav.active {
+        transform: translateY(0);
+        min-height: 100svh;
+        /*position: fixed;*/
+    }
+
+    body.active{
+        /*justify-content: flex-end;*/
+        overflow: hidden;
+    }
+
+    .main-header__content nav.active {
+        /*position: fixed;*/
+        z-index: 100;
+    }
+    .fundraising .container {
+        padding-bottom: 100px;
+    }
+
+    .fundraising__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fundraising__content h2 {
+        display: unset;
+    }
+
+    .list__items-numbers ul {
+        gap: 10px;
+    }
+
+    .list__items-numbers {
+        justify-content: center;
+    }
+
+    .list__items-numbers li {
+        width: 100%;
+    }
+
+    .for_projects .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .for_investors .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .about .container {
+        padding: 0 0 50px 0;
+    }
+
+    .footer__col-head {
+        margin-bottom: 64px;
+    }
+
+    .list__items ul {
+        display: unset;
+    }
+
+    .list__items li {
+        margin: 10px 0;
+    }
+
+    .about__content p {
+        padding: 0 20px;
+    }
+
+    .sponsors-footer {
+        padding: 0 0 100px 0;
+    }
+
+    .footer__head h2 {
+        align-items: center;
+    }
+
+    .footer__head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
