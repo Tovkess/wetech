@@ -10,35 +10,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__top">
-                <div class="logo">
-                    <img src="/imgs/Logo.svg" alt="">
-                </div>
-                <div class="header__top-content">
-                    <ul class="header__list">
-                        <li class="header__list-item"><a class="header__list-link" href="">For Projects</a></li>
-                        <li class="header__list-item"><a class="header__list-link" href="">For Investors</a></li>
-                    </ul>
-                    <a class="header__top-btn" href="">Join Now</a>
-                </div>
+<header class="header">
+    <div class="header__container">
+        <div class="header__top">
+            <div class="logo">
+                <img src="/imgs/Logo.svg" alt="Logo">
             </div>
-            <div class="header__content">
-                <h1 class="header__title">
-                    Vision Capital 
-                </h1>
-                <p class="header__text">
-                    The right way to fund and incubate your DeFi startup
-                </p>
-                <div class="header__btns">
-                    <a class="header__btn" href="#">I Need Funding</a>
-                    <a class="header__btn" href="#">Become an Investor</a>
-                </div>
+            <div class="header__top-content">
+                <ul class="header__list">
+                    <li class="header__list-item"><a class="header__list-link" href="">For Projects</a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="">For Investors</a></li>
+                </ul>
+                <a class="header__top-btn" href="">Join Now</a>
+                <button class="burger-menu" id="burgerMenu">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+            </div>
+            <div id="mobileMenuOverlay">
+                <a href="#" class="header__list-link">For Projects</a>
+                <a href="#" class="header__list-link">For Investors</a>
+                <a href="#" class="header__list-link">Join Now</a>
             </div>
         </div>
-    </header>
-    <section class="logos">
+        <div class="header__content">
+            <h1 class="header__title">
+                Vision Capital
+            </h1>
+            <p class="header__text">
+                The right way to fund and incubate your DeFi startup
+            </p>
+            <div class="header__btns">
+                <a class="header__btn" href="#">I Need Funding</a>
+                <a class="header__btn" href="#">Become an Investor</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="logos">
         <div class="container">
             <div class="logos__lines">
                 <h2 class="logos__title">
@@ -354,5 +364,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
